@@ -37,7 +37,8 @@ def load_chinese_raw():
     This provides a way to lookinto the 'raw' data
     '''
     raw = pd.read_csv(_DXY_DATA_PATH_)
-    
+
+
     # the original CSV column names are in camel case, change to lower_case convention
     rename_dict = {'updateTime': 'update_time',
                    'provinceName': 'province_name',
